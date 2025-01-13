@@ -13,13 +13,12 @@ void main() {
         cout << matriks[i] << " | ";
     }
 
-
-    //Menampilkan nilai mean
-    int total = 0;
+    //Menghitung nilai mean
+    double jumlahMatriks = 0;
     for (int i = 0; i < panjangArray; i++) {
-        total += matriks[i];
+        jumlahMatriks += matriks[i];
     }
-    double mean = total / panjangArray;
+    double mean = jumlahMatriks / panjangArray;
 
     //Menghitung nilai median
     sort(matriks, matriks + panjangArray);
@@ -33,7 +32,7 @@ void main() {
 
     cout << endl << "==============" << endl;
 
-    //Menghitung isi matriks setelah diurutkan
+    //Menampilkan isi matriks setelah diurutkan
     cout << "Data setelah diurutkan: " << endl;
     for (int i = 0; i < panjangArray; i++) {
         cout << matriks[i] << " | ";
